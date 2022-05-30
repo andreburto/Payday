@@ -15,13 +15,17 @@ using System.Windows.Shapes;
 namespace PaydayGui
 {
     /// <summary>
-    /// Interaction logic for Window1.xaml
+    /// Interaction logic for SpecialDay.xaml
     /// </summary>
-    public partial class Window1 : Window
+    public partial class SpecialDay : Window
     {
-        public Window1()
+        private SpecialDate _sd;
+
+        public SpecialDay()
         {
             InitializeComponent();
+            _sd = new SpecialDate();
+            this.DataContext = _sd;
         }
     }
 }
